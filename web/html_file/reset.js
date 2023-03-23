@@ -9,6 +9,8 @@ window.onload = function(){
             localStorage.setItem("PASS",nPass);
         }
 
+        document.getElementById("rp").onclick = location.href = 'index.html';
+
     }
 
 }

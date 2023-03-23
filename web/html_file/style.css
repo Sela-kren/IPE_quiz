@@ -1,0 +1,149 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-width: 100vh;
+    background: #845EC2;
+}
+.wrapper{
+    width: 770px;
+    padding: 35px;
+    background: #00C9A7 ;
+    border-radius: 10px;
+
+}
+
+
+
+.typing-text::-webkit-scrollbar{
+width: 0;
+
+}
+.wrapper .content-box{
+    padding: 13px 20px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+}
+.wrapper .input-field{
+    z-index: -999;
+    opacity: 0;
+    position: absolute;
+
+}
+.content-box .typing-text{
+    max-height: 255px;
+    overflow-y: auto;
+}
+
+
+
+.typing-text{
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+.typing-text p span.correct{
+
+    color: #C4FCEF;
+}
+.typing-text p span.incorrect{
+
+    color: #00C9A7;
+    background: #C4FCEF;
+    outline: 1px solid #4D8076;
+    border-radius: 4px;
+}
+.typing-text p span.active{
+    color: #845EC2;
+
+}
+.typing-text p span{
+    position: Relative;
+
+}
+.typing-text p span.active::before{
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    opacity: 0;
+    width: 100%;
+    background: #00C9A7;
+    animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink{
+    50%{
+        opacity: 1;
+
+    }
+
+}
+.content-box .content{
+    display: flex;
+    margin-top: 17px;
+    padding: 12px 0;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    justify-content: space-between;
+}
+.content button{
+    border: none;
+    outline: none;
+    width: 105px;
+    padding: 8px 0;
+    color: #fff;
+    cursor:pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    background: #845EC2;
+    transition: transform 0.3s ease;
+}
+.content button:active{
+    transform: scale(0.97);
+
+}
+.content .result-details{
+    width: calc(100% - 140px);
+    display: flex;
+    justify-content: space-between;
+}
+.result-details li{
+    display: flex;
+    height: 22px;
+    list-style: none;
+    align-items: center;
+}
+.result-details li span{
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.result-details li:not(:first-child){
+    padding-left: 22px;
+    border-left: 1px solid #ccc;
+
+}
+.result-details li:not(:first-child) span{
+    font-weight: 500;
+
+}
+.result-details li p{
+font-size: 19px;
+}
+.result-details li b{
+
+    font-weight: 500;
+}

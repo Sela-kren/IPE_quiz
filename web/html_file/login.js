@@ -12,7 +12,7 @@ window.onload = function(){
 
         if(Lname == name){
             console.log("hello my name is jeff")
-            document.getElementById("login").onclick = location.href ='listuser.html';
+            document.getElementById("login").onclick = location.href ='typing.html';
         }
     }
 }
