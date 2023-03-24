@@ -29,10 +29,12 @@ function randomParagraph(){
 function initTyping(){
     const characters = typingText.querySelectorAll("span");
     let typedChar = inpField.value.split("")[charIndex];
+
+    console.log(characters);
+    console.log(typedChar);
     if(charIndex < characters.length-1&& timeLeft>0){
        
-        console.log(characters.length)
-        console.log(typedChar)
+        
         if(!isTyping){
             
             timer = setInterval(initTimer , 1000);

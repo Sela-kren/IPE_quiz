@@ -1,20 +1,35 @@
 <html>
     <head>
-        <h1>login</h1>
-        <p>please login your account</p>
+        <link rel="stylesheet" href="css_file/login.css">
         <body>
-
-            <label for="lemail">Please enter email</label>
-            <input type="lemail" id="lemail">
-
-            <label for="lpassword"> please enter password</label>
-            <input type="lpassword" id="lpass">
-
-            <button type="Login" id="login">login</button>
-            <button type="back" onclick="location.href='index.html'">back</button>
-            <script src ="login.js"></script>
-            
-
+            <div class="container">
+                <div class="header">
+                    <h1>login</h1>
+                    <p>please login your account</p>
+                </div>
+                <div class="input-box">
+                    <span>
+                        <p for="lemail">Please enter email</p>
+                        <input type="lemail" id="lemail">
+                    </span>
+                  
+                        <span>
+                            <p for="lpassword"> please enter password</p>
+                            <input type="lpassword" id="lpass">
+    
+                        </span>
+                    
+                        <p>
+                            <button type="Login" id="login">login</button>
+                            <button type="back" onclick="location.href='index.html'">back</button>
+                        </p>
+                   
+                    
+                </div>   
+                
+                <script src ="login.js"></script>
+            </div
+            >
         </body>
     </head>
 
